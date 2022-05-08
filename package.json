@@ -1,0 +1,19 @@
+{
+  "name": "test-entree",
+  "version": "1.0.0",
+  "description": "cration de mon premier site perso",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgp82/monsite.git"
+  },
+  "author": "kevin grandpierre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kgp82/monsite/issues"
+  },
+  "homepage": "https://github.com/kgp82/monsite#readme"
+}
