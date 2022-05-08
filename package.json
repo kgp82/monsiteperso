@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kgp82/monsite/issues"
   },
-  "homepage": "https://github.com/kgp82/monsite#readme"
+  "homepage": "https://github.com/kgp82/monsite#readme",
+  "devDependencies": {
+    "sass": "^1.51.0"
+  }
 }
