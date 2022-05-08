@@ -1,0 +1,1 @@
+nav{background-color:#b3d13dcc;display:flex;align-items:center;justify-content:flex-end;border-radius:2rem}nav .nav_links a{padding:0 3rem;font-size:xx-large}@media(max-width: 767px){nav .nav_links a{display:flex;flex-wrap:nowrap;flex-direction:column;padding:.2rem;margin-right:1.5rem}}nav #logo{margin-right:auto;border-radius:2rem}

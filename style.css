@@ -1,20 +1,41 @@
-/* POLICE */
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap');
+/* POLICE*/
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap");
+/* GENRAL */
+*, ::before, ::after {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+* h1, * h2, * h3, * a, ::before h1, ::before h2, ::before h3, ::before a, ::after h1, ::after h2, ::after h3, ::after a {
+  font-size: 500;
+}
 
-/* GENERAL */
-body {
-    font-family: "Roboto", "sans serif";
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
+nav {
+  background-color: rgba(179, 209, 61, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 2rem;
+}
+nav .nav_links a {
+  padding: 0 3rem;
+  font-size: xx-large;
+}
+@media (max-width: 767px) {
+  nav .nav_links a {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 0.2rem;
+    margin-right: 1.5rem;
   }
-  ul{
-    list-style-type: none;
-  }
+}
+nav #logo {
+  margin-right: auto;
+  border-radius: 2rem;
+}
 
-  /* HEADER */
-  nav{
-      display: flex;
-       flex-direction: row;
-  }
+/*# sourceMappingURL=style.css.map */
