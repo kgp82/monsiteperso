@@ -1,7 +1,10 @@
 @import "../composants/mobile.scss";
+@import "../composants/box-shadow.scss";
 
 nav{
-    background-color: #b3d13dcc;
+    @include box-shadow;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.8813900560224089) 12%, rgba(29,253,91,1) 58%, rgba(69,206,252,1) 100%);
     display: flex;
     align-items: center;
     justify-content: flex-end;
