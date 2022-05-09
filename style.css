@@ -83,16 +83,39 @@ nav #logo {
   flex-wrap: wrap;
 }
 .projects .contain_projects a {
-  border: 2px solid black;
+  border: 5px solid rgb(34, 190, 73);
+  background: linear-gradient(24deg, rgb(63, 233, 110) 32%, rgb(69, 207, 107) 37%, rgb(29, 246, 253) 52%, rgb(69, 156, 250) 100%);
   text-align: center;
-  padding: 8rem 10rem;
-  margin: 5rem;
+  padding: 8rem 8rem;
+  margin: 2rem;
   border-radius: 2rem;
+  opacity: 0.5;
+  box-shadow: 3px 3px 10px lightgrey;
 }
 @media (max-width: 767px) {
   .projects .contain_projects a {
     margin: 1rem;
   }
+}
+.projects .contain_projects a:hover {
+  transform: scale(1.05);
+  transition: all 800ms;
+  opacity: 0.9;
+}
+
+footer {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.881390056) 12%, rgb(29, 253, 91) 58%, rgb(69, 206, 252) 100%);
+  color: white;
+  padding: 2rem;
+}
+footer h2 {
+  text-align: center;
+  color: black;
+}
+footer p {
+  margin: 1rem;
+  line-height: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
