@@ -118,4 +118,22 @@ footer p {
   line-height: 2rem;
 }
 
+section {
+  margin: 2rem;
+}
+section h2 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: xx-large;
+}
+section h3 {
+  margin-top: 2rem;
+  text-decoration: underline;
+  font-size: x-large;
+}
+section p, section li {
+  padding: 1rem;
+  font-style: italic;
+}
+
 /*# sourceMappingURL=style.css.map */
