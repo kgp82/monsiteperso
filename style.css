@@ -1,18 +1,5 @@
 /* POLICE*/
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap");
-/* GENRAL */
-*, ::before, ::after {
-  box-sizing: border-box;
-  text-decoration: none;
-  color: inherit;
-  font-family: "Dosis", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-* h1, * h2, * h3, * a, ::before h1, ::before h2, ::before h3, ::before a, ::after h1, ::after h2, ::after h3, ::after a {
-  font-size: xx-large;
-}
-
 nav {
   box-shadow: 3px 3px 10px lightgrey;
   background: rgb(0, 0, 0);
@@ -40,8 +27,15 @@ nav #logo {
   border-radius: 2rem;
 }
 
+#datetime {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
 .profil {
   background-color: rgba(211, 211, 211, 0.308);
+  border-radius: 12px;
   box-shadow: 3px 3px 10px lightgrey;
   padding: 1rem;
   display: flex;
@@ -55,10 +49,6 @@ nav #logo {
   font-size: 2rem;
 }
 
-.about {
-  background-color: rgb(63, 233, 110);
-  background: linear-gradient(24deg, rgb(63, 233, 110) 32%, rgb(69, 207, 107) 37%, rgb(29, 246, 253) 52%, rgb(69, 156, 250) 100%);
-}
 .about h2 {
   text-align: center;
   padding: 3rem 4rem;
@@ -73,7 +63,7 @@ nav #logo {
 
 .projects h2 {
   text-align: center;
-  padding: 3rem 4rem;
+  padding: 1rem 2rem;
   font-size: xx-large;
 }
 .projects .contain_projects {
@@ -83,10 +73,9 @@ nav #logo {
   flex-wrap: wrap;
 }
 .projects .contain_projects a {
-  border: 5px solid rgb(34, 190, 73);
-  background: linear-gradient(24deg, rgb(63, 233, 110) 32%, rgb(69, 207, 107) 37%, rgb(29, 246, 253) 52%, rgb(69, 156, 250) 100%);
+  border: 1px solid forestgreen;
   text-align: center;
-  padding: 8rem 8rem;
+  padding: 6rem;
   margin: 2rem;
   border-radius: 2rem;
   opacity: 0.5;
@@ -94,6 +83,7 @@ nav #logo {
 }
 @media (max-width: 767px) {
   .projects .contain_projects a {
+    padding: 2rem;
     margin: 1rem;
   }
 }
@@ -104,18 +94,34 @@ nav #logo {
 }
 
 footer {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.881390056) 12%, rgb(29, 253, 91) 58%, rgb(69, 206, 252) 100%);
+  background: rgb(87, 87, 87);
   color: white;
   padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 footer h2 {
-  text-align: center;
-  color: black;
+  color: rgb(199, 196, 196);
 }
 footer p {
+  color: black;
   margin: 1rem;
+  padding-left: 1rem;
   line-height: 2rem;
+  border: 1px solid yellow;
+  border-radius: 6px;
+  width: 22%;
+  background: yellowgreen;
+  cursor: pointer;
+  box-shadow: 8px 8px 10px black;
+}
+footer p:hover {
+  background: white;
+  border: none;
+  transform: scale(1.05);
+  transition-duration: 0.5s;
 }
 
 section {
@@ -134,6 +140,102 @@ section h3 {
 section p, section li {
   padding: 1rem;
   font-style: italic;
+}
+
+/* GENRAL */
+*, ::before, ::after {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+* h1, * h2, * h3, * a, ::before h1, ::before h2, ::before h3, ::before a, ::after h1, ::after h2, ::after h3, ::after a {
+  font-size: x-large;
+}
+
+.exp, .study, .interests {
+  text-align: center;
+}
+.exp h2, .study h2, .interests h2 {
+  background: yellowgreen;
+}
+.exp ul, .study ul, .interests ul {
+  list-style-type: none;
+}
+
+.resources {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.resources img {
+  width: 400px;
+  height: 200px;
+  margin: 2rem;
+}
+.resources img:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+#contact-form h1 {
+  text-align: center;
+}
+#contact-form .form-style {
+  margin: 15px auto;
+  width: 550px;
+  padding: 20px 12px;
+  font-size: x-large;
+  font-family: "Dosis", sans-serif;
+}
+#contact-form .form-style td {
+  padding: 0;
+  display: block;
+  list-style: none;
+  margin: 10px 0;
+}
+#contact-form .form-style label {
+  margin: 3px 0;
+  padding: 0;
+  display: block;
+  font-weight: bold;
+}
+#contact-form .form-style .required {
+  color: red;
+}
+#contact-form .form-style input[type=submit], #contact-form .form-style .form-style input[type=reset] {
+  background: yellowgreen;
+  padding: 8px 15px;
+  border: none;
+  color: #fff;
+}
+#contact-form .form-style input[type=submit]:hover, #contact-form .form-style input[type=reset]:hover {
+  background: yellowgreen;
+  box-shadow: none;
+}
+#contact-form .form-style .field-textarea {
+  height: 100px;
+}
+#contact-form .form-style input[type=text], #contact-form .form-style input[type=email], #contact-form .form-style textarea {
+  box-sizing: border-box;
+  border: 1px solid #bebebe;
+  padding: 7px 5px;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+#contact-form .form-style .long {
+  width: 100%;
+}
+#contact-form .form-style input[type=text]:focus, #contact-form .form-style input[type=email]:focus, #contact-form .form-style textarea:focus {
+  box-shadow: 0 0 8px #88d5e9;
+  border: 1px solid #88d5e9;
+}
+#contact-form .form-style .error {
+  color: #d8000c;
+  background: #ffbaba;
 }
 
 /*# sourceMappingURL=style.css.map */

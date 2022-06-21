@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon site perso</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/87b113fc96.js" crossorigin="anonymous"></script>
+    <script src="contact.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <nav>
+            <img id="logo" src="../img/logo.png" alt="Mon logo">
+                <div class="nav_links">
+                    <a href="../index.html">Acceuil</a>
+                    <a href="../pages/cv.html">Mon CV</a>
+                    <a href="../pages/resources.html">Mes ressources</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </nav>
+    </header>
+    <div id="contact-form">
+        <h1>Formulaire de contact</h1>
+        <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+            <table class="form-style">
+               <tr>
+                  <td>
+                     <label>
+                        Votre nom <span class="required">*</span>
+                     </label>
+                  </td>
+                  <td>
+                     <input type="text" name="name" class="long"/>
+                     <span class="error" id="errorname"></span>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label>
+                        Votre adresse e-mail <span class="required">*</span>
+                     </label>
+                  </td>
+                  <td>
+                     <input type="email" name="email" class="long"/>
+                     <span class="error" id="erroremail"></span>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label>
+                        Message <span class="required">*</span>
+                     </label>
+                  </td>
+                  <td>
+                     <textarea name="message" class="long field-textarea"></textarea>
+                     <span class="error" id="errormsg"></span>
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td>
+                     <input type="submit" value="Envoyer">      
+                     <input type="reset" value="Réinitialiser"> 
+                  </td>
+               </tr>
+            </table>
+         </form>
+    </div>
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <p>adresse : 5 rue charles cros 82000 Montauban</p>
+        <p><a href="mailto:grandpierre.kevin@gmail.com">@ mail : grandpierre.kevin@gmail.com</a></p>
+        <p>Télélphone : 0641525716</p>
+
+    </footer>
+    
+</body>
+</html>
+
+

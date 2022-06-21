@@ -1,0 +1,14 @@
+.resources{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    img{
+        width: 400px;
+        height: 200px;
+        margin: 2rem;
+        &:hover{
+            transform: scale(1.05);
+            transition-duration: 0.5s;
+        }
+    }
+}

@@ -1,14 +1,36 @@
-footer{background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.8813900560224089) 12%, rgba(29,253,91,1) 58%, rgba(69,206,252,1) 100%);
-    color: white;
-    padding: 2rem;
+footer{
+    //display: flex;
+   // align-items: center;
+   background: rgb(87, 87, 87);
+   color: white;
+   padding: 2rem;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+    .contact{
+        
+    }
     h2{
-        text-align: center;
-        color: black;
+        color: rgb(199, 196, 196);
     }
     p{
+        color: black;
         margin: 1rem ;
+        padding-left: 1rem;
         line-height: 2rem;
+        border: 1px solid yellow;
+        border-radius: 6px;
+        width: 22%;
+        background: yellowgreen;
+        cursor: pointer;
+        box-shadow: 8px 8px 10px black;
+    }
+    p:hover{
+        background: white;
+        border: none;
+        transform: scale(1.05);
+        transition-duration: 0.5s;
     }
 
 }

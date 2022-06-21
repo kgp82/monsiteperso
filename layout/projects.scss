@@ -3,7 +3,7 @@
 .projects{
     h2{
         text-align: center;
-        padding: 3rem 4rem;
+        padding: 1rem 2rem;
         font-size: xx-large;
     }
    .contain_projects{
@@ -12,16 +12,16 @@
         justify-content: space-between;
         flex-wrap: wrap;
     a{
-            border: 5px solid rgb(34, 190, 73);
-            background: linear-gradient(24deg, rgba(63,233,110,1) 32%, rgba(69,207,107,1) 37%, rgba(29,246,253,1) 52%, rgba(69,156,250,1) 100%);
-
+           
+            border: 1px solid forestgreen;
             text-align: center;
-            padding: 8rem 8rem;
+            padding:6rem;
             margin: 2rem;
             border-radius: 2rem;
             opacity: 0.5;
             @include box-shadow;
         @include mobile{
+            padding: 2rem;
             margin: 1rem;
         }
         &:hover{

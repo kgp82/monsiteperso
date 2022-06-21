@@ -1,6 +1,7 @@
 @import "../composants/box-shadow.scss";
 .profil{
     background-color: rgba(211, 211, 211, 0.308);
+    border-radius: 12px;
     @include box-shadow;
     padding: 1rem;
     display: flex;

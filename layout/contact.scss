@@ -1,0 +1,59 @@
+#contact-form{
+    h1{
+        text-align: center;
+    }
+    .form-style{
+        margin: 15px auto;
+        width: 550px;
+        padding: 20px 12px;
+        font-size: 700;
+        font-family: 'Dosis', sans-serif;
+        td{
+            padding: 0;
+            display: block;
+            list-style: none;
+            margin: 10px 0;
+        }
+        label{
+            margin: 3px 0;
+            padding: 0;
+            display: block;
+            font-weight: bold;
+        }
+        .required{
+            color: red;
+        }
+        input[type=submit], .form-style input[type=reset]{
+            background: yellowgreen;
+            padding: 8px 15px;
+            border: none;
+            color: #fff;
+        }
+        input[type=submit]:hover, input[type=reset]:hover{
+            background: yellowgreen;
+            box-shadow: none;
+        }
+        .field-textarea{
+            height: 100px;
+        }
+        input[type=text], input[type=email], textarea{
+            box-sizing: border-box;
+            border: 1px solid #bebebe;
+            padding: 7px 5px;
+            margin: 0;
+            transition: all 0.3s ease-in-out;
+            outline: none;
+        }
+        .long{
+            width: 100%;
+        }
+        input[type=text]:focus, input[type=email]:focus, textarea:focus{
+            box-shadow: 0 0 8px #88d5e9;
+            border: 1px solid #88d5e9;
+        }
+        .error{
+            color: #d8000c;
+            background: #ffbaba;
+        }
+    }
+}
